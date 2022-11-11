@@ -71,3 +71,22 @@ h2 {
 .about-description {
     font-size: 1.6rem;
 }
+
+.project {
+    margin: 4rem 0;
+}
+
+.project-image {
+    width: 24rem;
+    height: 18rem;
+    margin-right: 2.5rem;
+    border-radius: 0.6rem;
+}
+
+.project-title {
+    font-size: 3rem;
+}
+
+.project-description {
+    font-size: 1.6rem;
+}
