@@ -5,10 +5,18 @@ body {
     font-size: 1.6rem;
 }
 
+
+footer,
 section {
     padding: 5rem;
     max-width: 96rem;
     margin: 0 auto;
+}
+
+footer,
+p {
+    flex-direction: column;
+    font-size: 1.6rem;
 }
 
 h2 {
@@ -34,6 +42,7 @@ h2 {
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
+    font-size: 1.8rem;
 }
 
 .nav-links a {
@@ -41,16 +50,21 @@ h2 {
     font-size: 1.6rem;
 }
 
+.main {
+    margin-bottom: 5rem;
+}
+
 .avatar {
     border-radius: 100%;
-    height: 24rem;
     width: 24rem;
+    height: 24rem;
     margin-right: 10rem;
 }
 
 .main-title {
     font-size: 4rem;
 }
+
 .main-description {
     margin: 4rem 0;
     font-size: 1.6rem;
@@ -89,4 +103,45 @@ h2 {
 
 .project-description {
     font-size: 1.6rem;
+}
+
+.footer-social {
+    display: flex;
+    gap: 2rem;
+}
+
+/* Configuração de responsividade abaixo */
+
+@media (max-width: 1200px) {
+    .itens-center {
+        flex-direction: column;
+    }
+
+    footer,
+    section {
+        padding: 5rem;
+    }
+
+    .main {
+        margin-bottom: 2rem;
+    }
+
+    .main-title {
+        font-size: 2rem;
+    }
+
+    .project-image {
+        width: 38rem;
+        height: auto;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+
+    .avatar {
+        width: 18rem;
+        height: 18rem;
+        margin-right: 0;
+    }
 }
